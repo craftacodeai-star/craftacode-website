@@ -590,7 +590,7 @@ function Footer() {
     <footer className="bg-darkbark text-white/70 py-12 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 pb-8 border-b border-white/10">
-          <img src="/logo.png" alt="Craftacode" className="h-16 opacity-80" />
+          <span className="font-serif text-xl text-white/70 tracking-wide">craftacode</span>
           <div className="flex gap-8">
             {['Services', 'About', 'Portfolio', 'Contact'].map(l => (
               <a key={l} href={`#${l.toLowerCase()}`}
