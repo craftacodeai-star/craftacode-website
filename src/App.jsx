@@ -280,15 +280,8 @@ function About() {
         <FadeIn>
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl border border-sage-200 opacity-60"></div>
-            <div className="relative rounded-3xl overflow-hidden bg-sage-100 aspect-square flex items-center justify-center">
-              {/* Decorative illustration placeholder */}
-              <div className="text-center p-12">
-                <img src="/logo.png" alt="Craftacode" className="w-48 mx-auto opacity-80 mb-6" />
-                <div className="flex justify-center gap-2 opacity-50">
-                  <LeafLeft className="w-24" />
-                  <LeafRight className="w-24" />
-                </div>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden bg-sage-100 aspect-square">
+              <img src="/about-photo.png" alt="Craftacode Web Design" className="w-full h-full object-cover" />
             </div>
           </div>
         </FadeIn>
