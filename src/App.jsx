@@ -290,11 +290,6 @@ function About() {
                 </div>
               </div>
             </div>
-            {/* Floating badge */}
-            <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-lg px-5 py-3 border border-sage-100">
-              <p className="font-serif text-2xl font-medium text-sage-600">5+</p>
-              <p className="font-sans text-xs text-bark/60 uppercase tracking-wider">Years Experience</p>
-            </div>
           </div>
         </FadeIn>
 
