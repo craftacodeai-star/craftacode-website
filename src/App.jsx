@@ -491,14 +491,14 @@ function Contact() {
               {[
                 {
                   label: 'Email',
-                  value: 'hello@craftacode.com',
+                  value: 'craftacodeai@gmail.com',
                   icon: (
                     <path d="M4 8l16 10L36 8M4 8h32v24H4z" stroke="#748d3c" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
                   )
                 },
                 {
                   label: 'Phone',
-                  value: '(555) 123-4567',
+                  value: '330-861-2441',
                   icon: (
                     <path d="M10 6h6l2 7-4 2a18 18 0 008 8l2-4 7 2v6a2 2 0 01-2 2C14 29 11 6 10 8a2 2 0 010-2z" stroke="#748d3c" strokeWidth="1.5" fill="none"/>
                   )
