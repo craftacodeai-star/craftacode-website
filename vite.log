@@ -164,3 +164,4 @@
       at JSXParserMixin.parseBlockBody (/home/user/app/node_modules/@babel/parser/lib/index.js:13309:10)
       at JSXParserMixin.parseProgram (/home/user/app/node_modules/@babel/parser/lib/index.js:12622:10)
 8:05:37 AM [vite] hmr update /src/App.jsx, /src/index.css
+8:06:55 AM [vite] hmr update /src/App.jsx, /src/index.css

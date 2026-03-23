@@ -278,10 +278,15 @@ function About() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* Image side */}
         <FadeIn>
-          <div className="relative p-4">
-            <div className="absolute inset-0 rounded-3xl border border-sage-200 opacity-60"></div>
-            <div className="relative rounded-3xl overflow-hidden bg-sage-100 aspect-square">
-              <img src="/about-photo.png" alt="Craftacode Web Design" className="w-full h-full object-cover" />
+          <div className="relative flex items-center justify-center">
+            <div className="w-full aspect-square rounded-3xl bg-sage-50 border border-sage-200 flex flex-col items-center justify-center gap-6 p-10">
+              <img src="/logo.png" alt="Craftacode Web Design" className="w-56 mx-auto" />
+              <div className="flex items-center gap-3 opacity-50">
+                <LeafLeft className="w-28" />
+                <div className="w-1.5 h-1.5 rounded-full bg-sage-400"></div>
+                <LeafRight className="w-28" />
+              </div>
+              <p className="font-serif text-xl italic text-sage-600 text-center">"Crafted with care,<br/>built to grow."</p>
             </div>
           </div>
         </FadeIn>
