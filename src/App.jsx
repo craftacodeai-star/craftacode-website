@@ -312,7 +312,7 @@ function About() {
             </p>
             <div className="grid grid-cols-2 gap-6 mb-8">
               {[
-                { num: '50+', label: 'Sites Launched' },
+                { num: 'Custom', label: 'Every Project' },
                 { num: '100%', label: 'Client Satisfaction' },
                 { num: 'Local', label: 'Always Available' },
                 { num: '48hr', label: 'Response Time' },
