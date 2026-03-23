@@ -406,7 +406,7 @@ function Portfolio() {
 
 // ── Contact ──────────────────────────────────────────────────────────────────
 function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
   const [error, setError] = useState(false)
   const [submitting, setSubmitting] = useState(false)
@@ -426,6 +426,7 @@ function Contact() {
           access_key: WEB3FORMS_KEY,
           name: form.name,
           email: form.email,
+          phone: form.phone,
           message: form.message,
         }),
       })
@@ -518,6 +519,7 @@ function Contact() {
                 {[
                   { name: 'name', label: 'Your Name', type: 'text' },
                   { name: 'email', label: 'Email Address', type: 'email' },
+                  { name: 'phone', label: 'Phone Number', type: 'tel' },
                 ].map(f => (
                   <div key={f.name}>
                     <label className="block font-sans text-xs uppercase tracking-wider text-bark/60 mb-2">{f.label}</label>
