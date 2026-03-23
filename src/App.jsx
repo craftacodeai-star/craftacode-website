@@ -400,62 +400,6 @@ function Portfolio() {
   )
 }
 
-// ── Testimonials ─────────────────────────────────────────────────────────────
-const testimonials = [
-  {
-    quote: "Working with Craftacode was the best decision I made for my business. My website finally looks as good as my products.",
-    name: "Sarah M.",
-    role: "Owner, Bloom Florals",
-  },
-  {
-    quote: "Professional, responsive, and genuinely cared about getting it right. I've already recommended them to three other local businesses.",
-    name: "James T.",
-    role: "Manager, Stone & Grain Bakery",
-  },
-  {
-    quote: "Our new website has brought in so many new clients. The investment paid for itself within the first month.",
-    name: "Linda R.",
-    role: "Principal, Hartwell Law",
-  },
-]
-
-function Testimonials() {
-  return (
-    <section className="py-28 px-6 bg-sage-50/60">
-      <div className="max-w-6xl mx-auto">
-        <FadeIn>
-          <div className="text-center mb-16">
-            <div className="section-divider mb-3">
-              <span className="font-sans text-xs tracking-[0.3em] uppercase text-sage-500">Kind Words</span>
-            </div>
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-darkbark">What Clients Say</h2>
-          </div>
-        </FadeIn>
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((t, i) => (
-            <FadeIn key={i} delay={i * 100}>
-              <div className="bg-white rounded-2xl p-8 border border-sage-100 shadow-sm relative">
-                {/* Quote mark */}
-                <span className="font-serif text-6xl text-sage-200 leading-none absolute top-4 left-6">"</span>
-                <p className="font-sans font-light text-bark/70 leading-relaxed mb-6 mt-4 relative z-10">{t.quote}</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-sage-100 flex items-center justify-center">
-                    <span className="font-serif text-sage-600 font-medium">{t.name[0]}</span>
-                  </div>
-                  <div>
-                    <p className="font-sans text-sm font-medium text-darkbark">{t.name}</p>
-                    <p className="font-sans text-xs text-bark/50">{t.role}</p>
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
 // ── Contact ──────────────────────────────────────────────────────────────────
 function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -673,7 +617,6 @@ export default function App() {
       <Services />
       <About />
       <Portfolio />
-      <Testimonials />
       <Contact />
       <GivingBack />
       <Footer />
