@@ -340,8 +340,6 @@ const projects = [
   { title: 'Stone & Grain Bakery', category: 'Food & Bakery', color: 'bg-amber-50', accent: '#d4a85c' },
   { title: 'Hartwell Law', category: 'Professional Services', color: 'bg-slate-50', accent: '#7a8fa0' },
   { title: 'Coastal Yoga Studio', category: 'Health & Wellness', color: 'bg-sky-50', accent: '#7ab8c8' },
-  { title: 'Timber & Trowel', category: 'Home Services', color: 'bg-orange-50', accent: '#c47a4a' },
-  { title: 'Verde Kitchen', category: 'Restaurant', color: 'bg-green-50', accent: '#6a9e6a' },
 ]
 
 function Portfolio() {
