@@ -16,3 +16,73 @@
 7:13:12 AM [vite] hmr update /src/App.jsx, /src/index.css
 7:13:42 AM [vite] hmr update /src/App.jsx, /src/index.css
 7:14:59 AM [vite] hmr update /src/App.jsx, /src/index.css
+7:16:50 AM [vite] hmr update /src/App.jsx, /src/index.css
+7:16:57 AM [vite] hmr update /src/App.jsx, /src/index.css
+7:16:57 AM [vite] Internal server error: /home/user/app/src/App.jsx: Expected corresponding JSX closing tag for <a>. (402:12)
+
+  400 |                 </div>
+  401 |               </div>
+> 402 |             </FadeIn>
+      |             ^
+  403 |           ))}
+  404 |         </div>
+  405 |       </div>
+  Plugin: vite:react-babel
+  File: /home/user/app/src/App.jsx:402:12
+  400|                  </div>
+  401|                </div>
+  402|              </FadeIn>
+     |              ^
+  403|            ))}
+  404|          </div>
+      at constructor (/home/user/app/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/home/user/app/node_modules/@babel/parser/lib/index.js:6599:19)
+      at JSXParserMixin.jsxParseElementAt (/home/user/app/node_modules/@babel/parser/lib/index.js:4727:16)
+      at JSXParserMixin.jsxParseElementAt (/home/user/app/node_modules/@babel/parser/lib/index.js:4698:32)
+      at JSXParserMixin.jsxParseElement (/home/user/app/node_modules/@babel/parser/lib/index.js:4749:17)
+      at JSXParserMixin.parseExprAtom (/home/user/app/node_modules/@babel/parser/lib/index.js:4759:19)
+      at JSXParserMixin.parseExprSubscripts (/home/user/app/node_modules/@babel/parser/lib/index.js:11081:23)
+      at JSXParserMixin.parseUpdate (/home/user/app/node_modules/@babel/parser/lib/index.js:11066:21)
+      at JSXParserMixin.parseMaybeUnary (/home/user/app/node_modules/@babel/parser/lib/index.js:11046:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/user/app/node_modules/@babel/parser/lib/index.js:10899:61)
+      at JSXParserMixin.parseExprOps (/home/user/app/node_modules/@babel/parser/lib/index.js:10904:23)
+      at JSXParserMixin.parseMaybeConditional (/home/user/app/node_modules/@babel/parser/lib/index.js:10881:23)
+      at JSXParserMixin.parseMaybeAssign (/home/user/app/node_modules/@babel/parser/lib/index.js:10831:21)
+      at /home/user/app/node_modules/@babel/parser/lib/index.js:10800:39
+      at JSXParserMixin.allowInAnd (/home/user/app/node_modules/@babel/parser/lib/index.js:12426:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/user/app/node_modules/@babel/parser/lib/index.js:10800:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/user/app/node_modules/@babel/parser/lib/index.js:12493:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/user/app/node_modules/@babel/parser/lib/index.js:11675:28)
+      at JSXParserMixin.parseExprAtom (/home/user/app/node_modules/@babel/parser/lib/index.js:11331:23)
+      at JSXParserMixin.parseExprAtom (/home/user/app/node_modules/@babel/parser/lib/index.js:4764:20)
+      at JSXParserMixin.parseExprSubscripts (/home/user/app/node_modules/@babel/parser/lib/index.js:11081:23)
+      at JSXParserMixin.parseUpdate (/home/user/app/node_modules/@babel/parser/lib/index.js:11066:21)
+      at JSXParserMixin.parseMaybeUnary (/home/user/app/node_modules/@babel/parser/lib/index.js:11046:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/user/app/node_modules/@babel/parser/lib/index.js:10899:61)
+      at JSXParserMixin.parseExprOps (/home/user/app/node_modules/@babel/parser/lib/index.js:10904:23)
+      at JSXParserMixin.parseMaybeConditional (/home/user/app/node_modules/@babel/parser/lib/index.js:10881:23)
+      at JSXParserMixin.parseMaybeAssign (/home/user/app/node_modules/@babel/parser/lib/index.js:10831:21)
+      at JSXParserMixin.parseFunctionBody (/home/user/app/node_modules/@babel/parser/lib/index.js:12093:24)
+      at JSXParserMixin.parseArrowExpression (/home/user/app/node_modules/@babel/parser/lib/index.js:12075:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/user/app/node_modules/@babel/parser/lib/index.js:11687:12)
+      at JSXParserMixin.parseExprAtom (/home/user/app/node_modules/@babel/parser/lib/index.js:11331:23)
+      at JSXParserMixin.parseExprAtom (/home/user/app/node_modules/@babel/parser/lib/index.js:4764:20)
+      at JSXParserMixin.parseExprSubscripts (/home/user/app/node_modules/@babel/parser/lib/index.js:11081:23)
+      at JSXParserMixin.parseUpdate (/home/user/app/node_modules/@babel/parser/lib/index.js:11066:21)
+      at JSXParserMixin.parseMaybeUnary (/home/user/app/node_modules/@babel/parser/lib/index.js:11046:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/user/app/node_modules/@babel/parser/lib/index.js:10899:61)
+      at JSXParserMixin.parseExprOps (/home/user/app/node_modules/@babel/parser/lib/index.js:10904:23)
+      at JSXParserMixin.parseMaybeConditional (/home/user/app/node_modules/@babel/parser/lib/index.js:10881:23)
+      at JSXParserMixin.parseMaybeAssign (/home/user/app/node_modules/@babel/parser/lib/index.js:10831:21)
+      at /home/user/app/node_modules/@babel/parser/lib/index.js:10800:39
+      at JSXParserMixin.allowInAnd (/home/user/app/node_modules/@babel/parser/lib/index.js:12426:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/user/app/node_modules/@babel/parser/lib/index.js:10800:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/user/app/node_modules/@babel/parser/lib/index.js:12493:17)
+      at JSXParserMixin.parseExprListItem (/home/user/app/node_modules/@babel/parser/lib/index.js:12175:18)
+      at JSXParserMixin.parseCallExpressionArguments (/home/user/app/node_modules/@babel/parser/lib/index.js:11252:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/user/app/node_modules/@babel/parser/lib/index.js:11186:29)
+      at JSXParserMixin.parseSubscript (/home/user/app/node_modules/@babel/parser/lib/index.js:11120:19)
+      at JSXParserMixin.parseSubscripts (/home/user/app/node_modules/@babel/parser/lib/index.js:11094:19)
+      at JSXParserMixin.parseExprSubscripts (/home/user/app/node_modules/@babel/parser/lib/index.js:11085:17)
+      at JSXParserMixin.parseUpdate (/home/user/app/node_modules/@babel/parser/lib/index.js:11066:21)
+7:17:08 AM [vite] hmr update /src/App.jsx, /src/index.css

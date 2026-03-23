@@ -336,7 +336,7 @@ function About() {
 
 // ── Portfolio ────────────────────────────────────────────────────────────────
 const projects = [
-  { title: 'Bloom Florals', category: 'Local Florist', color: 'bg-rose-50', accent: '#e8a0a0' },
+  { title: 'Bloom Florals', category: 'Local Florist', color: 'bg-rose-50', accent: '#e8a0a0', url: 'https://company-website-build.vercel.app' },
   { title: 'Stone & Grain Bakery', category: 'Food & Bakery', color: 'bg-amber-50', accent: '#d4a85c' },
   { title: 'Hartwell Law', category: 'Professional Services', color: 'bg-slate-50', accent: '#7a8fa0' },
   { title: 'Coastal Yoga Studio', category: 'Health & Wellness', color: 'bg-sky-50', accent: '#7ab8c8' },
@@ -361,6 +361,12 @@ function Portfolio() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p, i) => (
             <FadeIn key={i} delay={i * 70}>
+              <a
+                href={p.url || undefined}
+                target={p.url ? '_blank' : undefined}
+                rel={p.url ? 'noopener noreferrer' : undefined}
+                className="block"
+              >
               <div className={`group rounded-2xl overflow-hidden border border-sage-100 hover:shadow-xl hover:shadow-sage-100/60 transition-all duration-400 cursor-pointer`}>
                 {/* Mock browser window */}
                 <div className={`${p.color} aspect-video relative flex items-center justify-center`}>
@@ -393,6 +399,7 @@ function Portfolio() {
                   <h3 className="font-serif text-lg text-darkbark">{p.title}</h3>
                 </div>
               </div>
+              </a>
             </FadeIn>
           ))}
         </div>
