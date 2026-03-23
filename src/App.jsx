@@ -533,7 +533,7 @@ function Contact() {
 // ── Giving Back ──────────────────────────────────────────────────────────────
 function GivingBack() {
   return (
-    <section className="py-20 px-6 bg-darkbark text-white">
+    <section className="py-20 px-6 bg-darkbark text-white overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <FadeIn>
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
@@ -582,7 +582,7 @@ function GivingBack() {
 // ── Footer ───────────────────────────────────────────────────────────────────
 function Footer() {
   return (
-    <footer className="bg-darkbark text-white/70 py-12 px-6">
+    <footer className="bg-darkbark text-white/70 py-12 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 pb-8 border-b border-white/10">
           <img src="/logo.png" alt="Craftacode" className="h-16 brightness-0 invert opacity-80" />
@@ -611,7 +611,7 @@ function Footer() {
 // ── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Nav />
       <Hero />
       <Services />
@@ -620,6 +620,6 @@ export default function App() {
       <Contact />
       <GivingBack />
       <Footer />
-    </>
+    </div>
   )
 }
