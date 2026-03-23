@@ -655,7 +655,10 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-sans">
-          <p className="text-white/40">© {new Date().getFullYear()} Craftacode Web Design. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <img src="/logo.png" alt="Craftacode" className="h-12 w-auto brightness-0 invert opacity-60" />
+            <p className="text-white/40">© {new Date().getFullYear()} Craftacode Web Design. All rights reserved.</p>
+          </div>
           <div className="flex items-center gap-2 text-white/40">
             <LeafLeft className="w-10 opacity-30" />
             <span>Handcrafted with care</span>
