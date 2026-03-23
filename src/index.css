@@ -9,6 +9,7 @@
   body {
     background-color: #faf8f3;
     color: #3d3226;
+    overflow-x: hidden;
   }
 }
 

@@ -278,8 +278,8 @@ function About() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* Image side */}
         <FadeIn>
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-3xl border border-sage-200 opacity-60"></div>
+          <div className="relative p-4">
+            <div className="absolute inset-0 rounded-3xl border border-sage-200 opacity-60"></div>
             <div className="relative rounded-3xl overflow-hidden bg-sage-100 aspect-square">
               <img src="/about-photo.png" alt="Craftacode Web Design" className="w-full h-full object-cover" />
             </div>
