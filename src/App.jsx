@@ -412,7 +412,7 @@ function Contact() {
   const [submitting, setSubmitting] = useState(false)
 
   // ✏️ Paste your Web3Forms access key here (from web3forms.com)
-  const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY'
+  const WEB3FORMS_KEY = 'a099b5ba-534a-4e88-bd06-5a87ad4d0c4a'
 
   const handleSubmit = async (e) => {
     e.preventDefault()
