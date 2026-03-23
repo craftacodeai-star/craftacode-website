@@ -335,7 +335,7 @@ function About() {
 // ── Portfolio ────────────────────────────────────────────────────────────────
 const projects = [
   { title: 'West Main', category: 'Local Barber', color: 'bg-rose-50', accent: '#e8a0a0', url: 'https://company-website-build.vercel.app' },
-  { title: 'Stone & Grain Bakery', category: 'Food & Bakery', color: 'bg-amber-50', accent: '#d4a85c', url: 'https://project-discovery-two.vercel.app' },
+  { title: 'Nail Design', category: 'Nail Salon', color: 'bg-amber-50', accent: '#d4a85c', url: 'https://project-discovery-two.vercel.app' },
 ]
 
 function Portfolio() {
