@@ -411,20 +411,26 @@ function Contact() {
   const [error, setError] = useState(false)
   const [submitting, setSubmitting] = useState(false)
 
-  // ✏️ Replace YOUR_FORM_ID below with your Formspree form ID (e.g. "xpwzabcd")
-  const FORMSPREE_ID = 'YOUR_FORM_ID'
+  // ✏️ Paste your Web3Forms access key here (from web3forms.com)
+  const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY'
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setSubmitting(true)
     setError(false)
     try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ name: form.name, email: form.email, message: form.message }),
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
       })
-      if (res.ok) {
+      const data = await res.json()
+      if (data.success) {
         setSent(true)
       } else {
         setError(true)
