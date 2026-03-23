@@ -471,14 +471,6 @@ function Contact() {
                 </div>
               ))}
 
-              <div className="pt-4 flex gap-3">
-                {['Facebook', 'Instagram', 'LinkedIn'].map(s => (
-                  <a key={s} href="#"
-                    className="w-9 h-9 rounded-full border border-sage-200 flex items-center justify-center hover:bg-sage-50 hover:border-sage-400 transition-colors text-xs font-sans text-sage-500">
-                    {s[0]}
-                  </a>
-                ))}
-              </div>
             </div>
           </FadeIn>
 
