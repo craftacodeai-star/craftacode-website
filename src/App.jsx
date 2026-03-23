@@ -336,7 +336,7 @@ function About() {
 
 // ── Portfolio ────────────────────────────────────────────────────────────────
 const projects = [
-  { title: 'Bloom Florals', category: 'Local Florist', color: 'bg-rose-50', accent: '#e8a0a0', url: 'https://company-website-build.vercel.app' },
+  { title: 'West Main', category: 'Local Barber', color: 'bg-rose-50', accent: '#e8a0a0', url: 'https://company-website-build.vercel.app' },
   { title: 'Stone & Grain Bakery', category: 'Food & Bakery', color: 'bg-amber-50', accent: '#d4a85c' },
   { title: 'Hartwell Law', category: 'Professional Services', color: 'bg-slate-50', accent: '#7a8fa0' },
   { title: 'Coastal Yoga Studio', category: 'Health & Wellness', color: 'bg-sky-50', accent: '#7ab8c8' },
