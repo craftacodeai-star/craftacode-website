@@ -408,10 +408,32 @@ function Portfolio() {
 function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
-  const handleSubmit = (e) => {
+  // ✏️ Replace YOUR_FORM_ID below with your Formspree form ID (e.g. "xpwzabcd")
+  const FORMSPREE_ID = 'YOUR_FORM_ID'
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSent(true)
+    setSubmitting(true)
+    setError(false)
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name: form.name, email: form.email, message: form.message }),
+      })
+      if (res.ok) {
+        setSent(true)
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -513,9 +535,12 @@ function Contact() {
                     className="w-full border border-sage-200 rounded-xl px-4 py-3 font-sans text-sm text-bark focus:outline-none focus:border-sage-400 bg-cream/50 transition-colors resize-none"
                   />
                 </div>
-                <button type="submit"
-                  className="w-full font-sans text-sm tracking-widest uppercase bg-sage-500 text-white py-4 rounded-full hover:bg-sage-600 transition-all duration-200 hover:shadow-lg hover:shadow-sage-200">
-                  Send Message
+                {error && (
+                  <p className="text-red-500 text-sm font-sans text-center">Something went wrong. Please try again.</p>
+                )}
+                <button type="submit" disabled={submitting}
+                  className="w-full font-sans text-sm tracking-widest uppercase bg-sage-500 text-white py-4 rounded-full hover:bg-sage-600 transition-all duration-200 hover:shadow-lg hover:shadow-sage-200 disabled:opacity-60 disabled:cursor-not-allowed">
+                  {submitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             )}
