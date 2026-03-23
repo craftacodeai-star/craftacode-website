@@ -589,6 +589,55 @@ function Contact() {
   )
 }
 
+// ── Giving Back ──────────────────────────────────────────────────────────────
+function GivingBack() {
+  return (
+    <section className="py-20 px-6 bg-darkbark text-white">
+      <div className="max-w-4xl mx-auto">
+        <FadeIn>
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            {/* Icon */}
+            <div className="flex-shrink-0 flex flex-col items-center">
+              <div className="w-24 h-24 rounded-full border-2 border-sage-400/50 flex items-center justify-center mb-3">
+                <span className="font-serif text-4xl font-light text-sage-400">10%</span>
+              </div>
+              <span className="font-sans text-xs tracking-widest uppercase text-white/40">of every project</span>
+            </div>
+
+            {/* Divider */}
+            <div className="hidden md:block w-px h-24 bg-white/10 flex-shrink-0"></div>
+
+            {/* Text */}
+            <div>
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-px bg-sage-400/40 w-8"></div>
+                <span className="font-sans text-xs tracking-[0.3em] uppercase text-sage-400">Giving Back</span>
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl font-light mb-4 leading-snug">
+                Business with <em className="text-sage-400 not-italic">Purpose</em>
+              </h2>
+              <p className="font-sans font-light text-white/60 leading-relaxed mb-5">
+                10% of every project's profit is donated to <strong className="text-white/80 font-medium">A21</strong> — a nonprofit working tirelessly to end human trafficking around the world. When you invest in your website, you're also helping protect vulnerable people and restore lives.
+              </p>
+              <a
+                href="https://www.a21.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-sans text-xs tracking-widest uppercase text-sage-400 hover:text-sage-300 transition-colors border border-sage-400/40 hover:border-sage-400 px-5 py-2.5 rounded-full"
+              >
+                Learn about A21
+                <svg viewBox="0 0 16 16" className="w-3 h-3" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  )
+}
+
 // ── Footer ───────────────────────────────────────────────────────────────────
 function Footer() {
   return (
@@ -629,6 +678,7 @@ export default function App() {
       <Portfolio />
       <Testimonials />
       <Contact />
+      <GivingBack />
       <Footer />
     </>
   )
