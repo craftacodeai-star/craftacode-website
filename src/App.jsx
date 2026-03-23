@@ -70,8 +70,8 @@ function Nav() {
       scrolled ? 'bg-cream/95 backdrop-blur-sm shadow-sm border-b border-sage-200/50' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home">
-          <img src="/logo.png" alt="Craftacode Web Design" className="h-14 w-auto" />
+        <a href="#home" className="font-serif text-2xl text-darkbark tracking-wide hover:text-sage-600 transition-colors">
+          craftacode
         </a>
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
